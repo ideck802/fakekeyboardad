@@ -1,0 +1,338 @@
+$duration: 5s;
+$text-color: rgba(255, 255, 255, 0.3);
+$bgr-color: #333;
+
+
+$blue: #00b8fc;
+$white: #ffffff;
+$black: #000000;
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.topslide > .scrolldownanimation {
+	position: relative;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	width: 10px;
+	height: 10px;
+	padding-top: 25%;
+}
+
+
+.topslide {
+	position: relative;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: $white;
+	background: $blue;
+	width: 100vmax;
+	height: 100vmax;
+}
+.topslide > h2 {
+	padding-top: 100px;
+	text-align: center;
+	font-size: 30px;
+}
+.thinkeyboard {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	height: 300px;
+}
+
+.slidetwo {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height: 500px;
+	background: $white;
+	color: $black;
+}
+.slidetwo > h3 {
+	position: absolute;
+	left: 0px;
+	right: 50%;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	width: 400px;
+	height: 100px;
+	background: white;
+	line-height: 30px;
+}
+.slidetwo > h3 > span {
+	border-bottom: 5px solid $blue;
+}
+.slidetwo > h3 > span2 {
+	border-bottom: 5px solid $blue;
+}
+.receiver1 {
+	display: none;
+	position: absolute;
+	top: 320px;
+	left: 60px;
+	border: 3px solid $blue;
+	width: 120px;
+	height: 120px;
+	border-radius: 100%;
+}
+.keyboardimg1 {
+	position: absolute;
+	right: 0px;
+	width: 600px;
+	height: 100%;
+}
+.keyboardimg1 > .img {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+#nokey {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: $white;
+}
+
+.slidethree {
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+}
+.slidethree > h3 {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	text-align: center;
+	width: 400px;
+	height: 120px;
+	color: $blue;
+	background: $white;
+}
+#canvas {
+	background: $white;
+}
+
+.slidefour {
+	position: relative;
+	height: 500px;
+	overflow: hidden;
+	background: $blue;
+}
+.slidefour > h3 {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 20px;
+	margin: auto;
+	text-align: right;
+	width: 400px;
+	height: 100px;
+	color: $white;
+}
+.toolbarimg {
+	position: absolute;
+	left: 0px;
+	width: 666px;
+}
+
+.slidefive {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	background: $white;
+	overflow: hidden;
+}
+.slidefive > .h31 {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	left: 20px;
+	text-align: left;
+	height: 50px;
+}
+.slidefive > .h32 {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	right: 20px;
+	text-align: right;
+	height: 50px;
+}
+.battinclude {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	margin: auto;
+	width: 753px;
+	text-align: right;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+.batteryimg {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	height: 500px;
+}
+.bubbles {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+.slidefinal {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	background: $blue;
+}
+.slidefinal > h2 {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	color: $white;
+	width: 250px;
+	height: 150px;
+	text-align: center;
+}
+.slidefinal > h2 > a {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	padding: 20px;
+	background: $white;
+	color: $blue;
+	text-decoration: none;
+	font-weight: bold;
+}
+.slidefinal > h2 > a:hover {
+	background: $blue;
+	color: $white;
+}
+.slidefinal > h2 > a:visited {
+	color: $blue;
+}
+.slidefinal > h2 > a:visited:hover {
+	color: $white;
+}
+.slidefinal > h2 > a:link {
+	color: $blue;
+}
+.slidefinal > h2 > a:link:hover {
+	color: $white;
+}
+
+.sources {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background: $blue;
+	color: $white;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	border-bottom: 1px solid $white;
+}
+.sources > a {
+	color: $white;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.show {
+	display: inline;
+}
+.image1 {
+	display: none;
+}
+.image1 > a, a:link, a:visited {
+	color: $white;
+}
+.image2 {
+	display: none;
+}
+.image3 {
+	display: none;
+}
+.image4 {
+	display: none;
+}
