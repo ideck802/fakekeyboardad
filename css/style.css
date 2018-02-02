@@ -126,8 +126,8 @@ body {
 .receiver1 {
   display: none;
   position: absolute;
-  top: 330px;
-  left: 70px;
+  top: 350px;
+  left: 100px;
   border: 3px solid #00b8fc;
   width: 120px;
   height: 120px;
