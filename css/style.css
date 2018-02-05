@@ -134,6 +134,17 @@ body {
   border-radius: 100%;
 }
 
+.receiver2 {
+  display: none;
+  position: absolute;
+  top: 190px;
+  left: 80px;
+  border: 3px solid #00b8fc;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+
 .keyboardimg1 {
   position: absolute;
   right: 0px;
