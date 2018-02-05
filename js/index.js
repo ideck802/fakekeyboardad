@@ -302,15 +302,25 @@ $("#span").mouseout(function(){
 });
 
 $("#span2").mouseover(function(){
-  $("#button").addClass("show")
+  $(".button1").addClass("show")
 });
 
 $("#span2").mouseout(function(){
   $(".button1").removeClass("show")
 });
+
+$("#span2").mouseover(function(){
+  $(".button2").addClass("show")
+});
+
 $("#span2").mouseout(function(){
   $(".button2").removeClass("show")
 });
+
+$("#span2").mouseover(function(){
+  $(".button3").addClass("show")
+});
+
 $("#span2").mouseout(function(){
   $(".button3").removeClass("show")
 });
