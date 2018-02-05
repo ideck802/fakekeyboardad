@@ -306,7 +306,13 @@ $("#span2").mouseover(function(){
 });
 
 $("#span2").mouseout(function(){
-  $("#button").removeClass("show")
+  $(".button1").removeClass("show")
+});
+$("#span2").mouseout(function(){
+  $(".button2").removeClass("show")
+});
+$("#span2").mouseout(function(){
+  $(".button3").removeClass("show")
 });
 
 $("#keyboardimg1").mouseover(function(){
