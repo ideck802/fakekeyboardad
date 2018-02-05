@@ -178,6 +178,17 @@ body {
   border-radius: 100%;
 }
 
+.button3 {
+  display: none;
+  position: absolute;
+  top: 139px;
+  left: 326px;
+  border: 2px solid #00b8fc;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
 .keyboardimg1 {
   position: absolute;
   right: 0px;
