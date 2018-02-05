@@ -278,11 +278,27 @@ canvas.addEventListener('mousemove', function(e){
 
 
 $("#span").mouseover(function(){
-  $("#receiver").addClass("show")
+  $(".receiver1").addClass("show")
 });
 
 $("#span").mouseout(function(){
-  $("#receiver").removeClass("show")
+  $(".receiver1").removeClass("show")
+});
+
+$("#span").mouseover(function(){
+  $(".receiver2").addClass("show")
+});
+
+$("#span").mouseout(function(){
+  $(".receiver2").removeClass("show")
+});
+
+$("#span").mouseover(function(){
+  $(".receiver3").addClass("show")
+});
+
+$("#span").mouseout(function(){
+  $(".receiver3").removeClass("show")
 });
 
 $("#span2").mouseover(function(){
