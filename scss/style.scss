@@ -7,16 +7,20 @@ $blue: #00b8fc;
 $white: #ffffff;
 $black: #000000;
 
+html {
+	height: 100%;
+}
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 	margin: 0px;
 	overflow-x: hidden;
+	height: 100%;
 }
 
 .chevron {
   position: absolute;
-  width: 28px;
-  height: 8px;
+  width: 100%;
+  height: 10%;
   opacity: 0;
   transform: scale3d(0.5, 0.5, 0.5);
   animation: move 3s ease-out infinite;
@@ -248,12 +252,6 @@ body {
 	margin: auto;
 	height: 500px;
 }
-.bubbles {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-}
 
 .slidefinal {
 	position: relative;
@@ -302,21 +300,6 @@ body {
 	color: $white;
 }
 
-.sources {
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	background: $blue;
-	color: $white;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 18px;
-	border-bottom: 1px solid $white;
-}
-.sources > a {
-	color: $white;
-	font-family: 'Source Sans Pro', sans-serif;
-}
 
 .show {
 	display: inline;
@@ -335,4 +318,295 @@ body {
 }
 .image4 {
 	display: none;
+}
+
+
+
+.menu_bar {
+	height: 5%;
+	z-index: 2;
+}
+.menu_bar > .w3-bar {
+	height: 100%;
+}
+.menu_bar a {
+	display: inline-flex;
+	align-items: center;
+	height: 100%;
+	color: $blue;
+	text-decoration: none;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.menu_bar a:hover {
+	background: $blue;
+	color: $white;
+}
+.menu_bar .fa-less-than {
+	margin-right: 5px;
+}
+.menu_bar .fa-greater-than {
+	margin-left: 5px;
+}
+
+
+.header {
+	position: relative;
+	width: 100%;
+	height: 95%;
+	background: $blue;
+	color: $white;
+	font-size: 170%;
+	z-index: 1;
+}
+.header > .scrolldownanimation {
+	width: 45px;
+	height: 100px;
+}
+.header > p {
+	padding: 25px;
+}
+
+.wireless {
+	position: relative;
+	height: 80%;
+	z-index: 0;
+}
+.wireless > p {
+	background: $white;
+	width: 50%;
+	padding: 20px;
+	color: $blue;
+	z-index: 0;
+}
+.wireless > p > span {
+	border-bottom: 5px solid $blue;
+}
+.wireless > .keyboardimg {
+	width: 50%;
+	border-top: 200px solid $white;
+	border-bottom: 200px solid $white;
+	z-index: 0;
+}
+.wireless > .keyboardimg > img {
+	width: 100%;
+	height: 100%;
+}
+.wireless > canvas {
+	z-index: 0;
+}
+
+.keyboardimg > #receiver {
+	border: 3px solid $blue;
+	width: 25%;
+	height: 30%;
+	border-radius: 100%;
+}
+.keyboardimg > #button {
+	border: 3px solid $blue;
+	width: 4.5%;
+	height: 6%;
+	border-radius: 100%;
+}
+.keyboardimg > .receiver10 {
+	position: absolute;
+	top: 44%;
+	left: -1%;
+}
+.keyboardimg > .receiver20 {
+	position: absolute;
+	top: 69%;
+	left: 16%;
+}
+.keyboardimg > .receiver30 {
+	position: absolute;
+	top: 0%;
+	left: 75%;
+}
+.keyboardimg > .button10 {
+	position: absolute;
+	top: 22.5%;
+	left: 48.5%;
+}
+.keyboardimg > .button20 {
+	position: absolute;
+	top: 25.5%;
+	left: 52.5%;
+}
+.keyboardimg > .button30 {
+	position: absolute;
+	top: 29%;
+	left: 56%;
+}
+
+.wireless-small {
+	position: relative;
+	height: 80%;
+}
+.wireless-small > p {
+	background: $white;
+	width: 100%;
+	padding: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-bottom: 10%;
+	color: $blue;
+}
+.wireless-small > p > span {
+	border-bottom: 5px solid $blue;
+}
+.wireless-small > .keyboardimg {
+	width: 100%;
+	border: 10px solid white;
+}
+.wireless-small > .keyboardimg > img {
+	width: 100%;
+}
+.wireless-small > canvas {
+
+}
+
+
+.thin {
+	position: relative;
+	background: $blue;
+	width: 100%;
+	padding: 100px;
+}
+.thin-small {
+	position: relative;
+	background: $blue;
+	width: 100%;
+	padding: 100px;
+}
+.thin-small > img {
+	width: 85%;
+}
+
+
+.minimal {
+	position: relative;
+}
+.minimal > canvas {
+	width: 100%;
+}
+.minimal > p {
+	color: $blue !important;
+	padding: 10px;
+}
+
+
+.hotkeys {
+	position: relative;
+	background: $blue;
+	color: $white;
+	padding: 0px;
+}
+.hotkeys > img {
+	width: 50%;
+}
+.hotkeys > p {
+	width: 50%;
+}
+
+.hotkeys-small {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background: $blue;
+	color: $white;
+	padding: 0px;
+	height: 90%;
+}
+.hotkeys-small > img {
+	width: 100%;
+}
+.hotkeys-small > p {
+	display: flex;
+  align-items: center; /* Vertical center alignment */
+  justify-content: center; /* Horizontal center alignment */
+	width: 100%;
+	flex: 1;
+}
+
+
+.batteries {
+	position: relative;
+	padding: 0px;
+}
+.batteries > img {
+	width: 50%;
+}
+.batteries > .about {
+	width: 50%;
+	color: $blue !important;
+}
+.batteries > .bubbles {
+	width: 50%;
+	height: 100%;
+}
+.batteries > .battincl {
+	width: 50%;
+	text-align: right;
+	background-color: rgba(255, 255, 255, 0.4);
+	margin: 0px;
+}
+
+.batteries-small {
+	position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #00b8fc;
+  color: #fff;
+  padding: 0px;
+  height: 90%;
+}
+.batteries-small > img {
+	width: 100%;
+	z-index: 1;
+}
+.batteries-small > div {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+	background: $white;
+	color: $blue !important;
+	margin: 0px;
+  flex: 1;
+}
+.batteries-small > div > .about {
+	color: $blue !important;
+	z-index: 1;
+}
+.batteries-small > div > canvas {
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+.batteries-small > .battincl {
+	width: 100%;
+	text-align: right;
+	background-color: rgba(255, 255, 255, 0.4);
+	color: black;
+	margin: 0px;
+	z-index: 2;
+}
+
+
+footer {
+	width: 100%;
+	background: $blue;
+	color: $white;
+}
+footer a {
+	padding: 20px;
+	background: $white;
+	color: $blue !important;
+	text-decoration: none;
+	font-weight: bold;
+}
+footer a:hover {
+	background: $blue;
+	color: $white !important;
 }
