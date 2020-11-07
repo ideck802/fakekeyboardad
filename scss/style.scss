@@ -507,6 +507,7 @@ body {
 }
 .hotkeys > p {
 	width: 50%;
+	padding: 10px;
 }
 
 .hotkeys-small {
@@ -526,6 +527,7 @@ body {
   align-items: center; /* Vertical center alignment */
   justify-content: center; /* Horizontal center alignment */
 	width: 100%;
+	padding: 10px;
 	flex: 1;
 }
 
@@ -539,6 +541,7 @@ body {
 }
 .batteries > .about {
 	width: 50%;
+	padding: 10px;
 	color: $blue !important;
 }
 .batteries > .bubbles {
@@ -577,6 +580,7 @@ body {
 }
 .batteries-small > div > .about {
 	color: $blue !important;
+	padding: 10px;
 	z-index: 1;
 }
 .batteries-small > div > canvas {
